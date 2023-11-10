@@ -1,12 +1,12 @@
 public class CalcN4 {
-    public static void Calc(int[] input, int min, int max) {
+    public static void Calc(int min, int max) {
         int maxSteps = 0;
         int[] longestInput = new int[4];
         for (int i = min; i < max; i++) {
             for (int j = min; j < max; j++) {
                 for (int k = min; k < max; k++) {
                     for (int l = min; l < max; l++) {
-                        input = new int[]{i,j,k,l};
+                        int[] input = new int[]{i, j, k, l};
 
                         int step = 0;
                         int[] array = input;

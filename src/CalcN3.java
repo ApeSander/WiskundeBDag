@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 
 public class CalcN3 {
-    public static void Calc(int[] input, int min, int max) {
+    public static void Calc(int min, int max) {
         int maxSteps = 0;
         int[] longestInput = new int[4];
         for (int i = min; i < max; i++) {
             for (int j = min; j < max; j++) {
                 for (int k = min; k < max; k++) {
 
-                    input = new int[]{i,j,k};
+                    int[] input = new int[]{i, j, k};
                     ArrayList<int[]> series = new ArrayList<int[]>();
 
                     int step = 0;
